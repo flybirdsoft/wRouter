@@ -4,6 +4,8 @@ wRouter
 前端SPA框架，主要解决路由(route)与控制处理(controller)处理以及简单灵活模板应用功能(www.github.com/flybirdsoft/template)
 本框架轻量级，对于前端开发限制少、灵活度高。
 
+wRouter.js浏览器环境IE8以上
+
 
 建议：此项目在eclipse下启动运行，运行环境jdk1.7+tomcat8，本地运行 http://localhost:8080/route
 
