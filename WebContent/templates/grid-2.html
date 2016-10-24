@@ -1,0 +1,28 @@
+<div class="Tcontent-2">
+	<div>这是第二个模板；动态请求的模板，动态请求数据</div>
+	<div>
+	模板：grid.html
+	数据：grid.json
+	</div>
+	<div class="grid">
+		<ul class="header">
+	    	<li>姓名</li>
+	    	<li>年龄</li>
+	    	<li>职业</li>
+	    	<li>个税</li>
+	    	<li>保险</li>
+	    	<li>个税+保险</li>
+	    	<li>操作</li>
+	    </ul>
+	    <div id="myList2" class="rows">
+			<ul class="${css} ${cssOdd}">
+				<li>${name}</li><li>${age}</li><li>${work}</li><li>${tax}</li><li>${bx}</li><li>${sum}</li>
+			</ul>	    
+	    </div>
+	</div>
+		
+</div>
+<!--
+注意：
+id="rows"的DIV是动态使用模板替换的
+-->

@@ -1,0 +1,25 @@
+<div class="Tcontent-1">
+	<div>这是第一个模板</div>
+	<div class="info">姓名：<span id="name"></span></div>
+	<div class="info">年龄：<span id="age"></span></div>
+	<div>
+	模板：templates/grid.html<br>
+	数据：data/grid.json
+	</div>
+	<div class="grid">
+		<ul class="header">
+    		<li>姓名</li>
+    		<li>年龄</li>
+    		<li>职业</li>
+    		<li>个税</li>
+    		<li>保险</li>
+    		<li>个税+保险</li>
+    	</ul>
+    	<div id="myList1" class="rows">
+			<ul class="${css} ${cssOdd}">
+				<li>${name}</li><li>${age}</li><li>${work}</li><li>${tax}</li><li>${bx}</li><li>${sum}</li>
+			</ul>
+		</div>
+	</div>
+
+</div>

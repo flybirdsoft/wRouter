@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>wRouterMVC</title>
+<style>
+body{margin:0;padding:0}
+.list{height:50px;background-color:#ccc}
+.item{height:50px;line-height:50px;text-align:center;float:left;width:100px;}
+.item:hover{background-color:#eee;}
+.content{height:auto;margin:10px;}
+.info{height:30px;line-height:30px;}
+.info span{color:#a00}
+</style>
+</head>
+
+<body>
+
+<div class="list">
+	<div class="item">
+    	<a href="#index" route="">首页</a>
+	</div>
+    <div class="item">
+    	<a href="#action/action1" route="">我的应用</a>
+	</div>
+    <div class="item">
+    	<a href="#action/action2" route="">我的信息</a>
+    </div>
+    <button onClick="gotoURL()">goto首页</button>
+</div>
+
+<div class="content">
+	<div class="info">姓名：<span id="name"></span></div>
+	<div class="info">年龄：<span id="age"></span></div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/wRouter.js"></script>
+<script>
+
+
+//**********wRouter调用****************************************
+
+var myroute={
+	routes:[
+		{
+		url:"/index",
+		controller:"myControllerIndex"
+		}
+		,	
+		{
+		url:"/action/action1",
+		controller:"myController1"
+		}
+		,
+		{
+		url:"/action/action2",
+		controller:"myController2"
+		}
+	],
+	otherwise:{
+		redirectTo:"/index"
+	}
+};
+wRouter.config(myroute);
+
+wRouter.controller("myControllerIndex",function(){
+	alert("this is index controller");
+	
+});
+
+wRouter.controller("myController1",function(){ 
+	var options={
+			url:"data.json",
+			param:{a:"aaa",b:"bbb"},
+			success:function(data){
+				$("#name").html(data.name);
+				$("#age").html(data.age);
+			},
+			error:function(){}
+			};
+	$http.get(options);
+});
+
+wRouter.controller("myController2",function(){
+	alert("this is action/action2 controller\n write by 邬畏畏");
+});
+
+function gotoURL(){
+	location.href="#/index";
+}
+//**********wRouter调用end*************************************
+
+</script>
+
+

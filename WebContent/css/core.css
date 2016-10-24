@@ -1,0 +1,273 @@
+/*
+write by wuweiwei
+*/
+body{
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+	background:#e1e1e1;
+}
+.list{
+	height:50px;
+	background-color:#2577e3;
+}
+a{
+	color:#FFF;
+	text-decoration:none;
+}
+.item{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	width:100px;
+}
+.item:hover{
+	background-color:#eee;
+}
+.item:hover a{
+	color:#D00
+}
+.content{
+	height:auto;
+	margin:10px;
+}
+.info{
+	height:30px;
+	line-height:30px;
+}
+.info span{
+	color:#a00
+}
+
+/*tempate box style begin*/
+.Tindex{
+	border:1px solid #ccc;
+	background:#eee;
+	padding:10px
+}
+.Tcontent-1{
+	border:1px solid #00c;
+	background:#c1d1f1;
+	padding:10px
+}
+.Tcontent-2{
+	border:1px solid #0c0;
+	background:#c1c1d6;
+	padding:10px
+}
+.Tcontent-3{
+	border:1px solid #0c0;
+	background:#d1c1f1;
+	padding:10px
+}
+.Tcontent-list{
+	border:1px solid #0c0;
+	background:#f3f3f3;
+	padding:10px
+}
+/*tempate box style end */
+
+ul,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+ul{
+	clear:both;
+	overflow:hidden;
+}
+
+/*grid style*/
+.grid{
+	border:1px solid #ccc;
+	height:auto;
+	width:700px;
+	padding:5px;
+	background-color:#fcfcfa
+}
+.grid .header{
+	height:30px;
+	line-height:30px;
+	background:#eee;
+}
+.grid .header li{
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	float:left;
+	width:100px;
+}
+.rows{
+	clear:both;
+}
+.rows li{
+	float:left;
+	height:25px;
+	line-height:25px;
+	width:100px;
+}
+.btnOp{
+	height:30px;
+	line-height:30px;
+	background:#eee;
+	border:1px dashed #ccc;
+	margin-top:10px;
+	width:710px;
+}
+.btnOp .btn{
+	cursor:pointer;
+	text-decoration:underline;
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+}
+.btnOp .btn:hover{
+	cursor:pointer;
+	text-decoration:none;
+}
+
+
+/*menu style*/
+.mainMenu li{
+	float:left;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	width:100px;
+}
+.mainMenu li a{
+	height:100%;
+	width:100%;
+	display:block;
+	text-dicoration:none;
+	color:#FFF;
+}
+
+.mainMenu .one{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	width:100px;
+}
+.mainMenu .oneH{
+	background-color:#eee;
+	color:#D00;
+}
+.mainMenu .oneC{
+	background-color:#c1d1f2;
+	color:#D00;
+}
+.mainMenu .oneC a{
+	color:#D00;
+}
+
+.mainMenu .two{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	width:100px;
+}
+.mainMenu .twoH{
+	background-color:#eee;
+	color:#D00;
+}
+.mainMenu .twoC{
+	background-color:#c1d1f2;
+	color:#D00;
+}
+.mainMenu .twoC a{color:#D00;}
+
+.mainMenu .three{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	width:100px;
+}
+.mainMenu .threeH{
+	background-color:#eee;
+	color:#D00;
+}
+.mainMenu .threeC{
+	background-color:#c1d1f2;
+	color:#D00;
+}
+.mainMenu .threeC a{color:#D00;}
+
+.mainMenu .fore{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	width:100px;
+}
+.mainMenu .foreH{
+	background-color:#eee;
+	color:#D00;
+}
+.mainMenu .foreC{
+	background-color:#c1d1f2;
+	color:#D00;
+}
+.mainMenu .foreC a{color:#D00;}
+
+.mainMenu .five{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	width:100px;
+}
+.mainMenu .fiveH{
+	background-color:#eee;
+	color:#D00;
+}
+.mainMenu .fiveC{
+	background-color:#c1d1f2;
+	color:#D00;
+}
+.mainMenu .fiveC a{color:#D00;}
+
+.gridcss1{background:#FFF;}
+.gridcss0{background:#c1d1f2;}
+.grid-form{
+	margin-top:10px;
+	background:#eee;
+	width:300px;
+	padding:5px;
+}
+
+.boxList{
+	overflow:hidden;
+}
+.boxList-item{
+	border:1px solid #aaa;
+	width:200px;
+	height:200px;
+	cursor:pointer;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.boxList-item-create{
+	border:1px solid #aaa;
+	width:200px;
+	height:200px;
+	cursor:pointer;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	line-height:200px;
+	text-align:center;
+}
+.boxList-item:hover{background:#d1e6f1;}
+.boxList-item dt{
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:5px;
+}
+

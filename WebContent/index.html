@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>wRouterMVC</title>
+<style>
+
+</style>
+<link href="css/core.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<ul id="mainMenu" class="list mainMenu">
+	<li class="one">
+    	<a href="#index">首页</a>
+	</li>
+    <li class="two">
+    	<a href="#action/action1">我的应用</a>
+	</li>
+    <li class="three">
+    	<a href="#action/action2">我的信息</a>
+    </li>
+    <li class="fore">
+    	<a href="#action/me?type=host&classId=0000">About Me</a>
+    </li>    
+    <li class="five">
+    	<a href="#list">我的列表</a>
+    </li>    
+</ul>
+
+<div id="mainContent" class="content">
+
+</div>
+
+
+
+<!-- script模板 begin -->
+
+<script id="templateIndex" type="template">
+<div class="Tindex">
+	<div>首页模板</div>
+	<div style="font-size:18px;padding:50px;font-weight:bold">
+		首页的信息可以存放在这里！<br/>		
+	</div>
+	<div id="args"></div>
+	<button id="btn">转到 AboutMe</button>
+</div>
+</script>
+
+<script id="template3" type="template">
+<div class="Tcontent-3">
+	<div>我的另一个模板</div>
+	<div id="param"></div>
+	<div id="me" style="color:#c00;background:#c1c1a5;border:1px solid #ccc;margin:10px;width:300px;padding:10px;"></div>
+
+	<div>
+		<div>提交表单</div>
+		<form id="myForm" action="" method="post">
+			姓名：<input name="name" value="" type="text"/>
+			<button id="submit" type="reset">提交</button>
+		</form>
+	</div>
+</div>
+</script>
+
+<!-- 模板 end -->
+
+</body>
+</html>
+<script src="js/lib/jquery-1.8.0.min.js"></script>
+<script src="js/lib/template.min.js"></script>
+<script src="js/lib/wRouter.min.js"></script>
+<script src="js/controller/indexController.js"></script>
+<script src="js/controller/myController1.js"></script>
+<script src="js/controller/myController2.js"></script>
+<script src="js/controller/listController.js"></script>
+<script src="js/wMenu.js"></script>
+<script src="js/config.js"></script>
+<!-- 
+conig.js是入口
+config.js里通过wRouter.config()配置路由，使用wRouter.controller("action/acton2",function(){});来处理不同的请求
+wRouter.commonController();用来做通用处理(即在有些情况下每个controller的需要相同的处理，可以把相同的处理放到commonController里)
+
+controller/*.js是每个wRouter.controller（）对应执行的js
+ -->
