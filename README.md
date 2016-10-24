@@ -5,6 +5,8 @@ wRouter
 本框架轻量级，对于前端开发限制少、灵活度高。
 
 
+建议：此项目在eclipse下启动运行，运行环境jdk1.7+tomcat8，本地运行 http://localhost:8080/route
+
 前端组件(部分组件)：
 www.flybirdsoft.com/WUI
 
