@@ -23,7 +23,11 @@ template.js主要解决数据渲染（view）功能可参考(www.github.com/flyb
 wRouter.js浏览器环境除IE6/7 其它环境均可。
 
 
-建议：此项目在eclipse下启动运行，运行环境jdk1.7+tomcat8，本地运行 http://localhost:8080/route
+建议：
+
+此项目建议在eclipse下启动运行，运行环境jdk1.7+tomcat8，本地运行 http://localhost:8080/route
+
+如果没有web服务器，可以使用firefox浏览器运行。
 
 
 
