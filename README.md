@@ -28,9 +28,9 @@ wRouter.js浏览器环境除IE6/7 其它环境均可。
 
 
 
-WUI组件(部分组件)可参考 
+UI组件可参考  
 www.flybirdsoft.com/WUI
 
-博客：
+博客 
 www.cnblogs.com/wsoft
 
