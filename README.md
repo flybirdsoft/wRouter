@@ -1,7 +1,7 @@
 wRouter
 =======
 
-前端SPA框架解决方案
+前端SPA框架（解决方案）
 
 wRouter.js主要解决路由(route)与控制器处理(controller)处理以
 
@@ -9,7 +9,7 @@ template.js主要解决数据渲染（view）功能可参考(www.github.com/flyb
 
 本框架轻量级，对于前端开发限制少、灵活度高，开发者如果需要其它组件或框架都可集成到系统里。
 
-特点：
+框架（解决方案）特点：
 ===
 1.路由（router）管理；
 
