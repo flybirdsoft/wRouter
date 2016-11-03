@@ -6,6 +6,7 @@ wRouter
 wRouter.js主要解决路由(route)与控制器处理(controller)处理以
 
 template.js主要解决数据渲染（view）功能可参考(www.github.com/flybirdsoft/template)
+
 本框架轻量级，对于前端开发限制少、灵活度高。
 
 特点：
