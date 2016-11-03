@@ -15,7 +15,7 @@ template.js主要解决数据渲染（view）功能可参考(www.github.com/flyb
 
 2.控制器（controller）处理与管理；
 
-3.模板引擎，处理（视图）view渲染，如果开发者不想用此模板引擎可不引入模板引擎js文件；
+3.模板引擎，处理（视图）view渲染，如果开发者不想用此模板引擎可不引入模板引擎js文件（template.min.js）；
 
 
 wRouter.js浏览器环境除IE6/7 其它环境均可。
